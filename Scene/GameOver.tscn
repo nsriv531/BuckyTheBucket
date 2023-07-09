@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5c54m71ivb1b"]
+
+[ext_resource type="PackedScene" uid="uid://chyinxko027f4" path="res://Scene/PauseScreen.tscn" id="1_3yx1t"]
+[ext_resource type="Script" path="res://Scene/GameOver.gd" id="2_rkygq"]
+
+[node name="GameOver" instance=ExtResource("1_3yx1t")]
+script = ExtResource("2_rkygq")
+
+[node name="Label" parent="VBoxContainer" index="0"]
+text = "=GameOver="
+
+[node name="resume" parent="VBoxContainer" index="1"]
+text = "Retry"
